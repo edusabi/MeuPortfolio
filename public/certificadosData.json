@@ -1,0 +1,38 @@
+[
+  {
+    "titulo": "Curso de JavaScript e TypeScript do básico ao avançado",
+    "instrutor": "Luiz Otávio Miranda – Udemy",
+    "duracao": "146Hrs",
+    "linguagens": ["js", "ts", "html", "css", "express", "mysql", "node"]
+  },
+  {
+    "titulo": "Formação Node.js – Guia do Programador",
+    "instrutor": "Victor Lima – Udemy",
+    "duracao": "50Hrs",
+    "linguagens": ["js", "mysql", "node", "express", "html", "css"]
+  },
+  {
+    "titulo": "React do Zero à Maestria",
+    "instrutor": "Matheus Battisti – Udemy",
+    "duracao": "30.5Hrs",
+    "linguagens": ["react", "js", "ts", "html", "css", "mongodb"]
+  },
+  {
+    "titulo": "Minicurso de Python + Flask",
+    "instrutor": "Rocketseat",
+    "duracao": "10Hrs",
+    "linguagens": ["python", "flask"]
+  },
+  {
+    "titulo": "NLW Connect - Python",
+    "instrutor": "Rocketseat",
+    "duracao": "5Hrs",
+    "linguagens": ["python", "flask"]
+  },
+  {
+    "titulo": "NLW Unite - Python",
+    "instrutor": "Rocketseat",
+    "duracao": "5Hrs",
+    "linguagens": ["python", "flask"]
+  }
+]

@@ -1,0 +1,218 @@
+.container {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 1000;
+}
+
+.botaoAbrir {
+    background-color: var(--color-details);
+    color: var(--color-white);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.roboAnimado {
+    animation: roboMexendo 2s infinite ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes roboMexendo {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    25% {
+        transform: rotate(-10deg) scale(1.05);
+    }
+
+    50% {
+        transform: rotate(10deg) scale(1.05);
+    }
+
+    75% {
+        transform: rotate(-10deg) scale(1.05);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+
+.chatBox {
+    width: 300px;
+    height: 400px;
+    background-color: var(--color-black);
+    border-radius: 12px;
+    box-shadow: 0 0 8px var(--color-white);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: abrirChat 0.4s ease forwards;
+}
+
+@keyframes abrirChat {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.topo {
+    background-color: var(--color-details);
+    color: var(--color-white);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeBtn {
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.mensagens {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: var(--color-gray);
+}
+
+.userMsg {
+    text-align: right;
+    margin: 5px 0;
+    color: var(--color-white);
+}
+
+.botMsg {
+    text-align: left;
+    margin: 5px 0;
+    color: var(--color-details);
+}
+
+.inputArea {
+    display: flex;
+    border-top: 1px solid var(--color-white);
+}
+
+.inputArea input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    outline: none;
+    padding-left: 2rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.inputArea button {
+    background: var(--color-details);
+    color: var(--color-white);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.configBot{
+    color: var(--color-details);
+    position: absolute;
+    top: 93.4%;
+    left: 5px;
+    cursor: pointer;
+}
+
+@keyframes pulo {
+    0% {
+        transform: scale(0.8) translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+.chatBox {
+    animation: pulo 0.3s ease;
+}
+
+.botMessagesDiv {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    background-color: var(--color-details); /* ou a cor que quiser */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--color-white);
+    z-index: 9999; /* pra garantir que fique acima de tudo */
+    text-align: center;
+  }
+
+  .closeDivMessages{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      transition: all .2s;
+    }
+    
+    .closeDivMessages:hover{
+        font-size: 22px;
+    }
+
+
+
+  /* //////////// */
+  
+  .botMessagesDiv h4 {
+    border-bottom: 1px solid var(--color-gray);
+    color: var(--color-gray);
+    padding: 4px 0;
+}
+
+.botMessagesDiv h3 {
+    border-bottom: 1px solid var(--color-gray);
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: var(--color-gray);
+    font-size: 18px;
+    padding-bottom: 4px;
+  }
+
+  .botMessagesDiv h2 {
+    margin-bottom: 5px;
+    color: var(--color-gray);
+    padding-bottom: 4px;
+  }
+  
+  .botMessagesDiv p {
+    margin: 8px 0 16px;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre-line;
+  }

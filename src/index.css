@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+  --color-details:#8b5cf6;
+  --color-gray:#1a1a1a;
+  --color-white:#FFF;
+  --color-opacity: #ffffff37;
+}
+
+html.light {
+  --color-gray: #ffffff;
+  --color-white:#000;
+  --color-details: #00ff26;
+  --color-opacity: #0000003c;
+}
+
+body{
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.04' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

@@ -1,0 +1,291 @@
+.homeIntro {
+    width: 100vw;
+    height: calc(100vh - 15vh);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  /* Alinha as divs ao topo */
+    gap: 2rem;                /* Espaçamento entre as colunas */
+    flex-wrap: wrap;          /* Permite que as divs quebrem para a linha seguinte se necessário */
+}
+
+.fraseAndFoto{
+    width: 30vw;
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fraseAndFoto img{
+    box-shadow: 0 0 15px var(--color-details);
+    background-color: var(--color-details);
+    border: 2px solid var(--color-white);
+    padding: 1rem;
+    border-radius: 50%;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+}
+
+.linguagens {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    max-width: 500px;  /* Limita a largura máxima da área das linguagens */
+    flex-wrap: wrap;
+}
+
+.linguagens h2{
+    position: absolute;
+    top: -10%;
+}
+
+.linguagens div {
+    background-color: var(--background-dark);
+    box-shadow: 0 0 8px var(--shadow-dark);
+    color: var(--color-dark);
+    font-size: 2rem;
+    transition: .3s all;
+    width: 85px;
+    height: 80px;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    user-select: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.linguagens div h3 {
+    font-size: 1rem;
+}
+
+/* Estilos individuais de animação para cada linguagem (sem alterações) */
+.linguagens .html { animation: bordaAnimadaHtml 3s infinite alternate; }
+.linguagens .html:hover {background-color:#e34f26 !important;}
+
+.linguagens .css { animation: bordaAnimadaCss 3s infinite alternate; }
+.linguagens .css:hover { background-color:#2965f1 !important; }
+
+.linguagens .js { animation: bordaAnimadaJs 3s infinite alternate; }
+.linguagens .js:hover { background-color:#f7df1e !important; }
+
+.linguagens .node { animation: bordaAnimadaNode 3s infinite alternate; }
+.linguagens .node:hover { background-color:#8cc84b !important; }
+
+.linguagens .react { animation: bordaAnimadaReact 3s infinite alternate; }
+.linguagens .react:hover { background-color:#61dafb !important; }
+
+.linguagens .python { animation: bordaAnimadaPython 3s infinite alternate; }
+.linguagens .python:hover { background-color:#4584b6 !important; }
+
+.linguagens .flask { animation: bordaAnimadaFlask 3s infinite alternate; }
+.linguagens .flask:hover { background-color:#0000009f !important; }
+
+.linguagens .mongo { animation: bordaAnimadaMongo 3s infinite alternate; }
+.linguagens .mongo:hover { background-color:#3FA037 !important; }
+
+.linguagens .mysql { animation: bordaAnimadaMysql 3s infinite alternate; }
+.linguagens .mysql:hover { background-color:#00758f !important; }
+
+.linguagens .sqlite { animation: bordaAnimadaSQLite 3s infinite alternate; }
+.linguagens .sqlite:hover { background-color:#90D4F4 !important; }
+
+.linguagens .postgress { animation: bordaAnimadaPostgress 3s infinite alternate; }
+.linguagens .postgress:hover { background-color:#008bb9 !important; }
+
+.linguagens .github { animation: bordaAnimadaGithub 3s infinite alternate; }
+.linguagens .github:hover { background-color:#7a868c !important; }
+
+.linguagens .git { animation: bordaAnimadaGit 3s infinite alternate; }
+.linguagens .git:hover { background-color:#f14e32 !important; }
+
+.linguagens .express { animation: bordaAnimadaExpress 3s infinite alternate; }
+.linguagens .express:hover { background-color:#7a868c !important; }
+
+
+.semCursor::after {
+    display: none !important;
+}
+
+/* Definindo a animação de borda para cada linguagem com cores diferentes */
+@keyframes bordaAnimadaHtml {
+    0% {
+        box-shadow: 0 0 5px transparent;
+    }
+    50% {
+        box-shadow: 0 0 5px #e34f26; /* Cor do HTML */
+    }
+    100% {
+        box-shadow: 0 0 5px transparent;
+    }
+}
+
+@keyframes bordaAnimadaCss {
+    0% {
+        box-shadow: 0 0 5px transparent;
+    }
+    50% {
+        box-shadow: 0 0 5px #2965f1; /* Cor do CSS */
+    }
+    100% {
+        box-shadow: 0 0 5px transparent;
+    }
+}
+
+@keyframes bordaAnimadaJs {
+    0% {
+        box-shadow: 0 0 5px transparent;
+    }
+    50% {
+        box-shadow: 0 0 5px #f7df1e; /* Cor do JavaScript */
+    }
+    100% {
+        box-shadow: 0 0 5px transparent;
+    }
+}
+
+@keyframes bordaAnimadaNode {
+    0% {
+        box-shadow: 0 0 5px transparent;
+    }
+    50% {
+        box-shadow: 0 0 5px #8cc84b; /* Cor do Node */
+    }
+    100% {
+        box-shadow: 0 0 5px transparent;
+    }
+}
+
+@keyframes bordaAnimadaReact {
+    0% {
+        box-shadow: 0 0 5px transparent;
+    }
+    50% {
+        box-shadow: 0 0 5px #61dafb; /* Cor do React */
+    }
+    100% {
+        box-shadow: 0 0 5px transparent;
+    }
+}
+
+@keyframes bordaAnimadaPython {
+    0% {
+        box-shadow: 0 0 5px transparent;
+    }
+    50% {
+        box-shadow: 0 0 5px #4584b6; /* Cor do Python */
+    }
+    100% {
+        box-shadow: 0 0 5px transparent;
+    }
+}
+
+@keyframes bordaAnimadaFlask {
+    0% {
+        box-shadow: 0 0 5px transparent;
+    }
+    50% {
+        box-shadow: 0 0 5px #000; /* Cor do Flask */
+    }
+    100% {
+        box-shadow: 0 0 5px transparent;
+    }
+}
+
+@keyframes bordaAnimadaMongo {
+    0% {
+        box-shadow: 0 0 5px transparent;
+    }
+    50% {
+        box-shadow: 0 0 5px #3FA037; /* Cor do MongoDB */
+    }
+    100% {
+        box-shadow: 0 0 5px transparent;
+    }
+}
+
+@keyframes bordaAnimadaMysql {
+    0% {
+        box-shadow: 0 0 5px transparent;
+    }
+    50% {
+        box-shadow: 0 0 5px #00758f; /* Cor do MySQL */
+    }
+    100% {
+        box-shadow: 0 0 5px transparent;
+    }
+}
+
+@keyframes bordaAnimadaSQLite {
+    0% {
+        box-shadow: 0 0 5px transparent;
+    }
+    50% {
+        box-shadow: 0 0 5px #90D4F4; /* Cor do SQLite */
+    }
+    100% {
+        box-shadow: 0 0 5px transparent;
+    }
+}
+
+@keyframes bordaAnimadaPostgress {
+    0% {
+        box-shadow: 0 0 5px transparent;
+    }
+    50% {
+        box-shadow: 0 0 5px #008bb9; /* Cor do PostgreSQL */
+    }
+    100% {
+        box-shadow: 0 0 5px transparent;
+    }
+}
+
+@keyframes bordaAnimadaGithub {
+    0% {
+        box-shadow: 0 0 5px transparent;
+    }
+    50% {
+        box-shadow: 0 0 5px #7a868c; /* Cor do GitHub */
+    }
+    100% {
+        box-shadow: 0 0 5px transparent;
+    }
+}
+
+@keyframes bordaAnimadaGit {
+    0% {
+        box-shadow: 0 0 5px transparent;
+    }
+    50% {
+        box-shadow: 0 0 5px #f14e32; /* Cor do Git */
+    }
+    100% {
+        box-shadow: 0 0 5px transparent;
+    }
+}
+
+@keyframes bordaAnimadaExpress {
+    0% {
+        box-shadow: 0 0 5px transparent;
+    }
+    50% {
+        box-shadow: 0 0 5px #7a868c; /* Cor do Express */
+    }
+    100% {
+        box-shadow: 0 0 5px transparent;
+    }
+}

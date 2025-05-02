@@ -1,0 +1,60 @@
+.reposWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 15vh);
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.reposAbout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 2rem 4rem;
+    justify-content: center;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.cardProjeto {
+    text-align: center;
+    padding: .5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 12px var(--color-details);
+    border: 1.5px solid var(--color-details);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    width: 100%;
+}
+
+.languageUsage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+    width: 100%;
+}
+
+.divLinks {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.divLinks a {
+    color: var(--color-white);
+    transition: all .4s;
+}
+
+.divLinks a:hover {
+    color: var(--color-details);
+}

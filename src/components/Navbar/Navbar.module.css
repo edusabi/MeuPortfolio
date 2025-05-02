@@ -1,0 +1,53 @@
+.header {
+    color: var(--color-white);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    border-bottom: 2.5px solid var(--color-details);
+}
+
+.items {
+    display: flex;
+    gap: 1rem;
+}
+
+.links {
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.links:hover {
+    background-color: var(--color-opacity);
+    transform: scale(1.05);
+}
+
+.activeLink {
+    background-color: var(--color-details) !important;
+    color: var(--color-white);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+
+/* ícone do tema */
+.mode {
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.iconTheme {
+    font-size: 1.5rem;
+    color: var(--color-details);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.iconTheme:hover {
+    transform: rotate(25deg) scale(1.2);
+}
