@@ -51,8 +51,8 @@ export default function Certificados() {
         <h1 className={styles.customHeading} data-aos="zoom-in" data-aos-delay="200">Certificados</h1>
         <div className={styles.cardContainer}>
           {certificados.length === 0 ? (
-            <p>Carregando certificados...</p>
-          ) : (
+            ""
+            ) : (
             certificados.map((cert, i) => (
               <motion.div
                 key={i}
