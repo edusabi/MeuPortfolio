@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./Chatbot.module.css";
+import styles from "./ChatBot.module.css";
 import { FaRobot, FaTimes } from "react-icons/fa";
 import { FaGear } from "react-icons/fa6";
 
