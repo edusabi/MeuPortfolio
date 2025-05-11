@@ -38,7 +38,7 @@ const Projetos = () => {
   return (
     <div>
       <Navbar />
-        <h1 style={{textAlign:"center", marginTop:"1rem"}} data-aos="zoom-in" data-aos-delay="200">Projetos</h1>
+        <h1 style={{textAlign:"center", marginTop:"3rem", marginBottom:"1rem"}} data-aos="zoom-in" data-aos-delay="200">Projetos</h1>
     <div className={style.reposWrapper}>
       <div className={style.reposAbout}>
         {repos &&
