@@ -25,9 +25,9 @@ const Sobre = () => {
       <div className={style.containerSobre}>
         
         <div>
-        <h1 data-aos="fade-right">Sobre</h1>
 
         <div className={style.sobreParagrafo}>
+          <h1 data-aos="fade-right">Sobre</h1>
           <p data-aos="fade-right">Olá! Me chamo <strong>Luís Eduardo</strong>, mas pode me chamar de <strong>Edu</strong>. Sou desenvolvedor Full Stack com foco em <strong>JavaScript, Node.js, React</strong> e banco de dados <strong>SQL e NoSQL</strong> (MySQL, PostgreSQL, MongoDB e SQLite). Também tenho experiência com <strong>Python</strong> e <strong>Flask</strong>, e estou sempre buscando aprender novas tecnologias.</p>
 
           <p data-aos="fade-left">Tenho facilidade para trabalhar tanto no front-end quanto no back-end, gosto de criar interfaces modernas com React, e também já desenvolvi APIs REST completas, sistemas de autenticação, chat em tempo real com Socket.io e páginas dinâmicas com banco de dados.</p>
