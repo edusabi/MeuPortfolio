@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <div className={style.header}>
-      <h1>logo</h1>
+      <h1><img src="./logoo.jpg" alt="" width="70px" className={style.imgNavbar}/></h1>
 
       <div className={style.items}>
         <NavLink to="/" className={({ isActive }) => isActive ? `${style.links} ${style.activeLink}` : style.links}>Home</NavLink>

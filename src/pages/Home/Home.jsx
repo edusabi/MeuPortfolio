@@ -51,13 +51,11 @@ const Home = () => {
             sequence={[
               2000, 
               'Desenvolvedor Full-Stack', 
-              3000,
+              2000,
               'Desenvolvedor Front-End',
-              3000,
+              2000,
               'Desenvolvedor Back-End',
-              3000,
-              'Desenvolvedor Mobile',
-              3000,
+              2000,
             ]}
             wrapper="span"
             speed={50}

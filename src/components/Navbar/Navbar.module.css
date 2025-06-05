@@ -8,6 +8,11 @@
     border-bottom: 2.5px solid var(--color-details);
 }
 
+.imgNavbar{
+    width: 60px;
+    border-radius: 50px;
+}
+
 .items {
     display: flex;
     gap: 1rem;

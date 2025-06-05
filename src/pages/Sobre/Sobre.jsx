@@ -32,7 +32,7 @@ const Sobre = () => {
 
           <p data-aos="fade-left">Tenho facilidade para trabalhar tanto no front-end quanto no back-end, gosto de criar interfaces modernas com React, e também já desenvolvi APIs REST completas, sistemas de autenticação, chat em tempo real com Socket.io e páginas dinâmicas com banco de dados.</p>
 
-          <p data-aos="fade-right">Estou cursando <strong>faculdade na área de tecnologia</strong>, onde me destaco por sempre buscar soluções práticas e eficientes. Meus projetos incluem desde sistemas de reservas para restaurantes até chatbots e dashboards interativos.</p>
+          <p data-aos="fade-right">Estou cursando na área de tecnologia, onde me destaco por sempre buscar soluções práticas e eficientes.</p>
 
           <p data-aos="fade-left">Sou <strong>comprometido, curioso e apaixonado por tecnologia</strong>. Estou sempre em busca de novos desafios para evoluir como programador.</p>
         </div>
