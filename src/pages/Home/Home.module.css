@@ -289,3 +289,57 @@
         box-shadow: 0 0 5px transparent;
     }
 }
+
+@media (max-width: 768px) {
+    .homeIntro {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        gap: 1.5rem;
+        padding: 2rem 0;
+    }
+
+    .imgAbout{
+        margin: 2rem 0;
+    }
+
+    .fraseAndFoto {
+        width: 80vw;
+        gap: 2rem;
+        display: flex;
+    }
+    
+    .linguagens {
+        margin: 5rem 0;
+        max-width: 85%;
+    }
+
+    .linguagens div {
+        width: 70px;
+        height: 65px;
+        font-size: 1.5rem;
+    }
+
+    .linguagens div h3 {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .fraseAndFoto {
+        width: 90vw;
+        gap: 1.5rem;
+    }
+
+    .linguagens div {
+        width: 60px;
+        height: 55px;
+        font-size: 1.2rem;
+    }
+
+    .linguagens div h3 {
+        font-size: 0.8rem;
+    }
+}

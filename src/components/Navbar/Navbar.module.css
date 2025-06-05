@@ -8,7 +8,7 @@
     border-bottom: 2.5px solid var(--color-details);
 }
 
-.imgNavbar{
+.imgNavbar {
     width: 60px;
     border-radius: 50px;
 }
@@ -37,14 +37,8 @@
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: background-color 0.3s ease;
-  }
-  
-
-/* ícone do tema */
-.mode {
-    cursor: pointer;
-    padding: 0.5rem;
 }
+
 
 .iconTheme {
     font-size: 1.5rem;
@@ -55,4 +49,90 @@
 
 .iconTheme:hover {
     transform: rotate(25deg) scale(1.2);
+}
+
+/* separação */
+
+.navbarLine {
+    display: none;
+    cursor: pointer;
+}
+
+.navbarLine div {
+    border-radius: 1px;
+    width: 32px;
+    height: 2px;
+    background: var(--color-white);
+    margin: 8px;
+    transition: .4s;
+}
+
+@media (max-width: 630px) {
+    .header{
+        padding: .5rem;
+    }
+
+    .iconTheme{
+        font-size: 2rem;
+    }
+
+    .navbarLine {
+        display: block;
+    }
+
+    .header .items {
+        position: absolute;
+        left: 0;
+        top: 15%;
+        height: 100vh;
+        flex-direction: column;
+        gap: 6.5rem;
+        font-size: 2.5rem;
+        text-align: center;
+        z-index: 1;
+        width: 100vw;
+        transform: translateX(-100%);
+        backdrop-filter: blur(10px);
+        transition: .4s all;
+        margin-top: 1rem;
+    }
+
+    .navlink {
+        margin-bottom: 1rem;
+    }
+
+    .header .items.ativo {
+        transform: translateX(0);
+    }
+
+    .header .navbarLine .line1Ativo {
+        transform: rotate(-45deg) translate(-7px, 7px);
+        transition: transform 0.4s ease;
+    }
+
+    .header .navbarLine .line2Ativo {
+        display: none;
+        transition: display 0.4s ease;
+    }
+
+    .header .navbarLine .line3Ativo {
+        transform: rotate(45deg);
+        transition: transform 0.4s ease;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    .header .items {
+        gap: 5rem;
+    }
+
+    .navbarLine {
+        margin-right: 3rem;
+    }
+
+    .linguagens {
+        height: 70vh;
+    }
 }

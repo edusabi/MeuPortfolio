@@ -58,3 +58,42 @@
 .divLinks a:hover {
     color: var(--color-details);
 }
+
+@media (max-width: 600px) {
+  .reposWrapper {
+    min-height: auto; /* se quiser ajustar a altura em telas pequenas */
+    padding: 0;
+  }
+
+  .reposAbout {
+    grid-template-columns: 1fr; /* uma coluna só para ficar melhor no mobile */
+    gap: 2rem;
+    max-width: 100%;
+    padding: 1rem .1rem;
+  }
+
+  .cardProjeto {
+    max-width: none !important;  /* remove o limite de largura */
+    width: 70%;                  /* ocupa quase toda a largura da tela */
+    margin: 0 auto;              /* centraliza horizontalmente */
+    padding: 1rem;               /* um pouco mais de espaço interno */
+  }
+
+  .languageUsage {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .divLinks {
+    gap: 0; /* reduzir o espaço entre os links */
+    flex-direction: column;
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+
+  .divLinks a {
+    display: block;
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
+}
