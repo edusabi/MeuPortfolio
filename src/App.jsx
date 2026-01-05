@@ -10,7 +10,6 @@ import Projetos from './pages/Projetos/Projetos';
 
 ///components
 import NotFound from './components/NotFound/NotFound';
-import Chatbot from "./components/ChatBot/ChatBot";
 
 function App() {
 
@@ -18,8 +17,6 @@ function App() {
       <div>
         <BrowserRouter>
         
-            <Chatbot/>
-            
           <Routes>
 
             <Route path='/' element={<Home/>}/>
