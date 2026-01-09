@@ -21,11 +21,8 @@ const Projetos = () => {
       }, []);
 
   const projetosSelecionados = [
-    "CadastroUserInPython",
+    "pokeverse",
     "AppGram",
-    "ProjetoFaculWeb",
-    "Gerenciamento_usuario",
-    "ReservaRestaurante"
   ];
   const { repos, loading, erro } = useGithubRepos(
     "edusabi",
