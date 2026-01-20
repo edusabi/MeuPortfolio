@@ -23,6 +23,7 @@ const Projetos = () => {
   const projetosSelecionados = [
     "pokeverse",
     "AppGram",
+    "playerMusic"
   ];
   const { repos, loading, erro } = useGithubRepos(
     "edusabi",
